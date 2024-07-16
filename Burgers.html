@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efe's Restaurant</title>
+    <link rel="stylesheet" href="burgers.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="name">
+                <a href="restaurant.html">Efe's Restaurant</a>
+            </div>
+            <div class="menu-toggle">☰</div>
+            <div class="items">
+                <ul>
+                    <li><a href="Burgers.html">Burgers</a></li>
+                    <li><a href="Pizza.html">Pizzas</a></li>
+                    <li><a href="Desserts.html">Desserts</a></li>
+                    <li><a href="Drinks.html">Drinks</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="back"></div>
+        <div class="box">  
+            <div class="burger-item vegan">
+                <h1>CHEE´IS VEGAN</h1>
+                <h2>11,90 €</h2>
+            </div>
+            <div class="burger-item vacon">
+                <h1>KLASSIK VACON</h1>
+                <h2>12,90 €</h2>
+            </div>
+            <div class="burger-item avocado">
+                <h1>AVOCADO</h1>
+                <h2>14,90 €</h2>
+            </div> 
+            <div class="burger-item nacho">
+                <h1>NACHO MACHO</h1>
+                <h2>18,90 €</h2>
+            </div>
+            <div class="burger-item mango">
+                <h1>MANGO TANGO</h1>
+                <h2>12,90 €</h2>
+            </div>
+            <div class="burger-item peter">
+                <h1>PIKANTER PETER</h1>
+                <h2>14,90 €</h2>
+            </div>
+            <div class="burger-item jack">
+                <h1>ONION JACK</h1>
+                <h2>17,90 €</h2>
+            </div>
+            <div class="burger-item smash">
+                <h1>SMASH BURGER</h1>
+                <h2>8,90€</h2>
+            </div>
+            <div class="burger-item maco">
+                <h1>MACARONI</h1>
+                <h2>13,90 €</h2>
+            </div>
+            <div class="burger-item tomato">
+                <h1>Tomato</h1>
+                <h2>11,70 €</h2>
+            </div>
+            <div class="burger-item classic">
+                <h1>Classic Cheese</h1>
+                <h2>8,70 €</h2>
+            </div>
+            <div class="burger-item the">
+                <h1>The Legend</h1>
+                <h2>25,00 €</h2>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const items = document.querySelector('.items');
+            menuToggle.addEventListener('click', function() {
+                items.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>

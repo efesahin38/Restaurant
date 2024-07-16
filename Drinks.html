@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efe's Restaurant</title>
+    <link rel="stylesheet" href="Drinks.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="name">
+                <a href="restaurant.html">Efe's Restaurant</a>
+            </div>
+            <div class="menu-toggle">☰</div>
+            <div class="items">
+                <ul>
+                    <li><a href="Burgers.html">Burgers</a></li>
+                    <li><a href="Pizza.html">Pizzas</a></li>
+                    <li><a href="Desserts.html">Desserts</a></li>
+                    <li><a href="Drinks.html">Drinks</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="back"></div>
+        <div class="box">  
+            <div class="drinks-item cola">
+                <h1>Coca-Cola 0,33L</h1>
+                <h2>4,50 €</h2>
+            </div>
+            <div class="drinks-item fanta">
+                <h1>Fanta Orange 0,33L</h1>
+                <h2>4,90 €</h2>
+            </div>
+            <div class="drinks-item sprite">
+                <h1>Sprite 0,33L</h1>
+                <h2>4,20 €</h2>
+            </div>
+            <div class="drinks-item water">
+                <h1>Water 0,75L</h1>
+                <h2>6,30 €</h2>
+            </div>
+            <div class="drinks-item basıl">
+                <h1>Basıl Spray 0,2L</h1>
+                <h2>7,90 €</h2>
+            </div>
+            <div class="drinks-item ape">
+                <h1>Aperol Spray 0,2L</h1>
+                <h2>7,90 €</h2>
+            </div>
+            <div class="drinks-item hook">
+                <h1>The Hook 0,4L</h1>
+                <h2>9,90 €</h2>
+            </div>
+            <div class="drinks-item on">
+                <h1>Sex On The Beach 0,4L</h1>
+                <h2>8,90 €</h2>
+            </div>
+            <div class="drinks-item watermelon">
+                <h1>Watermelon Gın 0,4L</h1>
+                <h2>10,90 €</h2>
+            </div>
+            <div class="drinks-item sun">
+                <h1>Sunrise 0,4L</h1>
+                <h2>9,90 €</h2>
+            </div>
+            <div class="drinks-item berry">
+                <h1>Berry Blossom 0,4L</h1>
+                <h2>11,90 €</h2>
+            </div>
+            <div class="drinks-item tropical">
+                <h1>Tropical Dream  0,4L</h1>
+                <h2>19,90 €</h2>
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const items = document.querySelector('.items');
+            menuToggle.addEventListener('click', function() {
+                items.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>

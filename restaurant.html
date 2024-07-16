@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efe's Restaurant</title>
+    <link rel="stylesheet" href="restaurant.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="name">
+                <a href="restaurant.html">Efe's Restaurant</a>
+            </div>
+            <div class="menu-toggle">☰</div>
+            <div class="items">
+                <ul>
+                    <li><a href="Burgers.html">Burgers</a></li>
+                    <li><a href="Pizza.html">Pizzas</a></li>
+                    <li><a href="Desserts.html">Desserts</a></li>
+                    <li><a href="Drinks.html">Drinks</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="center">
+        <h1>Welcome to Efe's Restaurant</h1>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const items = document.querySelector('.items');
+            menuToggle.addEventListener('click', function() {
+                items.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>

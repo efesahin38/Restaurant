@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efe's Restaurant</title>
+    <link rel="stylesheet" href="Pizza.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="name">
+                <a href="restaurant.html">Efe's Restaurant</a>
+            </div>
+            <div class="menu-toggle">☰</div>
+            <div class="items">
+                <ul>
+                    <li><a href="Burgers.html">Burgers</a></li>
+                    <li><a href="Pizza.html">Pizzas</a></li>
+                    <li><a href="Desserts.html">Desserts</a></li>
+                    <li><a href="Drinks.html">Drinks</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="back"></div>
+        <div class="box">  
+            <div class="pizza-item salami">
+                <h1>Tomato Pizza</h1>
+                <h2>9,90 €</h2>
+            </div>
+            <div class="pizza-item spring ">
+                <h1>Spring Pizza</h1>
+                <h2>13,20 €</h2>
+            </div>
+            <div class="pizza-item brocoli">
+                <h1>Broccoli Pizza</h1>
+                <h2>14,95 €</h2>
+            </div>
+            <div class="pizza-item chicken">
+                <h1>Chicken Pizza</h1>
+                <h2>11,80 €</h2>
+            </div>
+            <div class="pizza-item cheese">
+                <h1>Cheese Pizza</h1>
+                <h2>9,90 €</h2>
+            </div>
+            <div class="pizza-item mushroom">
+                <h1>Mushroom Pizza</h1>
+                <h2>12,80 €</h2>
+            </div>
+            <div class="pizza-item spinach">
+                <h1>Spinach Pizza</h1>
+                <h2>11,40 €</h2>
+            </div>
+            <div class="pizza-item marg">
+                <h1>Margherita Pizza</h1>
+                <h2>9,80 €</h2>
+            </div>
+            <div class="pizza-item bbq">
+                <h1>BBQ Chicken</h1>
+                <h2>13,95 €</h2>
+            </div>
+            <div class="pizza-item hot">
+                <h1>Hot Dog Pizza</h1>
+                <h2>11,95 €</h2>
+            </div>
+            <div class="pizza-item greek ">
+                <h1>Greek Pizza</h1>
+                <h2>9,90 €</h2>
+            </div>
+            <div class="pizza-item mexica ">
+                <h1>Mexican Pizza</h1>
+                <h2>11,80 €</h2>
+            </div>
+            <div class="pizza-item hawai ">
+                <h1>Hawii Pizza</h1>
+                <h2>10,70 €</h2>
+            </div>
+            <div class="pizza-item new ">
+                <h1>New York Pizza</h1>
+                <h2>13,50 €</h2>
+            </div>
+            <div class="pizza-item bacon ">
+                <h1>Bacon Pizza</h1>
+                <h2>8,50 €</h2>
+            </div>
+            <div class="pizza-item tuna ">
+                <h1>Tuna Pizza</h1>
+                <h2>9,95 €</h2>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const items = document.querySelector('.items');
+            menuToggle.addEventListener('click', function() {
+                items.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>

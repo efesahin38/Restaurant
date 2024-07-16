@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efe's Restaurant</title>
+    <link rel="stylesheet" href="Desserts.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="name">
+                <a href="restaurant.html">Efe's Restaurant</a>
+            </div>
+            <div class="menu-toggle">☰</div>
+            <div class="items">
+                <ul>
+                    <li><a href="Burgers.html">Burgers</a></li>
+                    <li><a href="Pizza.html">Pizzas</a></li>
+                    <li><a href="Desserts.html">Desserts</a></li>
+                    <li><a href="Drinks.html">Drinks</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="back"></div>
+        <div class="box">  
+            <div class="desserts-item scake">
+                <h1>Strawberry cake</h1>
+                <h2>6,30 €</h2>
+            </div>
+            <div class="desserts-item kiwi">
+                <h1>Kiwi Cake</h1>
+                <h2>5,90 €</h2>
+            </div>
+            <div class="desserts-item ccake">
+                <h1>Chocolate Cake</h1>
+                <h2>5,80 €</h2>
+            </div>
+            <div class="desserts-item cacake">
+                <h1>Carrot Cake</h1>
+                <h2>7,10 €</h2>
+            </div>
+            <div class="desserts-item dcake">
+                <h1>Double Strawberry Cake</h1>
+                <h2>10,90 €</h2>
+            </div>
+            <div class="desserts-item bcake">
+                <h1>Banana Cake</h1>
+                <h2>6,70 €</h2>
+            </div>
+            <div class="desserts-item baklava">
+                <h1>Baklava</h1>
+                <h2>7,50 €</h2>
+            </div>
+            <div class="desserts-item coldbaklava">
+                <h1>Cold Baklava</h1>
+                <h2>8,50 €</h2>
+            </div>
+            <div class="desserts-item kadayıf">
+                <h1>Kadayıf</h1>
+                <h2>6,30 €</h2>
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const items = document.querySelector('.items');
+            menuToggle.addEventListener('click', function() {
+                items.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>

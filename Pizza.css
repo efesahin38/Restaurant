@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(8, 8, 8, 0.966);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    position: relative;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(248, 248, 248).7;
+    box-shadow: 0 0 40px yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 10;
+}
+
+nav .name a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(241, 131, 6);
+}
+
+nav .menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+nav .items {
+    display: flex;
+    align-items: center;
+}
+
+nav .items ul {
+    display: flex;
+    list-style: none;
+}
+
+nav .items ul li {
+    margin: 0 20px;
+}
+
+nav .items ul li a {
+    background-color: wheat;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+nav .items ul li a:hover {
+    background-color: #f0e68c;
+}
+
+
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    background-color: rgba(10, 10, 10, 0.514);
+    border-radius: 15px;
+    box-shadow: 0 0 30px yellow;
+    margin: 100px auto 0;
+    max-width: 1300px;
+    position: relative;
+    bottom: 20px;
+    
+}
+
+.pizza-item{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    color: wheat;
+    text-shadow: 1px 1px 2px black;
+}
+
+.pizza-itemh1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.pizza-item h2 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.pizza-item:hover {
+    transform: scale(1.1);
+}
+
+.salami{
+    background: url(photos/pizza-salami.png);
+}
+.spring{
+    background: url(photos/pizza-fruehlingsbrise.png);
+}
+.brocoli{
+    background: url(photos/pizza-augenweide.png);
+}
+.chicken{
+    background: url(photos/pizza-teriyaki-chicken-bro.png);
+}
+.cheese{
+    background: url(photos/pizza-4-kaese.png);
+}
+.mushroom{
+    background: url(photos/pizza-funghi.png);
+}
+.spinach{
+    background: url(photos/pizza-spinaci.png);
+}
+.marg{
+    background: url(photos/pizza-margherita.png);
+}
+.bbq{
+    background: url(photos/pizza-bbq-chicken_orig.png);
+}
+.hot{
+    background: url(photos/pizza-hotdog.png);
+}
+.greek{
+    background: url(photos/pizza-greek.png);
+}
+.mexica{
+    background: url(photos/pizza-mexiko.png);
+}
+.hawai{
+    background: url(photos/pizza-hawaii.png);
+}
+.new{
+    background: url(photos/pizza-new-york.png);
+}
+.bacon{
+    background: url(photos/pizza-prosciutto.png);
+}
+.tuna{
+    background: url(photos/pizza-hot-tonno.png);
+}
+@media (max-width: 992px) {
+    .pizza-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav .items {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(248, 248, 248, 0.9);
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    nav .items.show {
+        display: flex;
+    }
+
+    nav .menu-toggle {
+        display: block;
+    }
+
+    .pizza-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .pizza-item h1 {
+        font-size: 16px;
+    }
+
+    .pizza-item h2 {
+        font-size: 14px;
+    }
+}
